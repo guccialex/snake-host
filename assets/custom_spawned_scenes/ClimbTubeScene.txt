@@ -1,0 +1,107 @@
+(
+  resources: {},
+  entities: {
+    4294968217: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.9776156, 7.9429493, -0.9389586),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::delete_entities_overlapping_with::DeleteEntitiesOverlappingWith": (),
+      },
+    ),
+    4294968218: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.023407277, 7.976658, -1.0477977),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::delete_entities_overlapping_with::DeleteEntitiesOverlappingWith": (),
+      },
+    ),
+    4294968219: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-0.96300894, 8.023492, -0.93188095),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::delete_entities_overlapping_with::DeleteEntitiesOverlappingWith": (),
+      },
+    ),
+    4294968220: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.036446434, 5.9608736, -6.9315906),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::delete_entities_overlapping_with::DeleteEntitiesOverlappingWith": (),
+      },
+    ),
+    4294968221: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-0.023707625, 6.0099316, -5.9793296),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::delete_entities_overlapping_with::DeleteEntitiesOverlappingWith": (),
+      },
+    ),
+    4294968223: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 1.0, -7.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::delete_entities_overlapping_with::DeleteEntitiesOverlappingWith": (),
+        "game::single_file_plugins::fruit::Fruit": (),
+      },
+    ),
+    4294968224: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 0.0, -7.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::delete_entities_overlapping_with::DeleteEntitiesOverlappingWith": (),
+        "game::single_file_plugins::fruit::Fruit": (),
+      },
+    ),
+    133143986195: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.11603998, -0.07841889, -10.943827),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::delete_entities_overlapping_with::DeleteEntitiesOverlappingWith": (),
+      },
+    ),
+  },
+)

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Use dynamic viewport units so mobile address bars don’t shrink your canvas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Snake Forever Adventure</title>
+
+  <!-- Trunk: copy assets -->
+  <link data-trunk rel="copy-dir" href="assets/" />
+
+  <!-- Optional: your CSS + bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      /* Default to fill the container; you enforce AR in Bevy via viewport. */
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #000; /* your checker stays under #page-bg */
+      overflow: hidden; /* avoid scrollbars inside iframe */
+    }
+    /* Your original background pattern, placed behind the canvas */
+    #page-bg {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        white 0%,
+        white 49%,
+        black 49%,
+        black 51%,
+        white 51%,
+        white 100%
+      ) repeat;
+      background-size: 20px 20px;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* The game root fills the visible page (or the iframe) */
+    #game-root {
+      position: relative;
+      width: 100%;
+      height: 100dvh;  /* use dynamic viewport height on mobile */
+      z-index: 1;
+    }
+
+    /* Let the canvas fill the root; JS will set its pixel width/height (DPR) */
+    #bevy-canvas, canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: white;
+      touch-action: none;        /* prevent swipe-to-scroll/zoom on mobile */
+      -webkit-user-select: none; /* iOS */
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Minimal overlay UI for fullscreen toggle */
+    #overlay {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      display: flex;
+      gap: 8px;
+      z-index: 2;
+      pointer-events: auto;
+    }
+    .overlay-btn {
+      padding: 6px 10px;
+      font-size: 14px;
+      line-height: 1;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      cursor: pointer;
+    }
+    .overlay-btn:hover { background: rgba(0,0,0,0.65); }
+  </style>
+</head>
+
+<body>
+  <div id="page-bg"></div>
+
+  <div id="game-root">
+    <div id="overlay">
+      <button id="fs-btn" class="overlay-btn" title="Fullscreen (Esc to exit)">Fullscreen</button>
+    </div>
+    <!-- Bevy will create/attach the canvas. If you prefer to predefine it, uncomment:
+    <canvas id="bevy-canvas"></canvas>
+    -->
+  </div>
+
+  <script type="module">
+    console.log("Loading Bevy game...");
+    import init from './target/bevy_game.js';
+
+    // Boot the WASM. If your generated glue returns a promise, await it.
+    await init();
+
+    // Grab the canvas Bevy/winit created (or the predefined one if you uncommented it).
+    let canvas = document.querySelector('#bevy-canvas') || document.querySelector('canvas');
+    if (!canvas) {
+      console.warn('Bevy canvas not found; creating one manually.');
+      canvas = document.createElement('canvas');
+      canvas.id = 'bevy-canvas';
+      document.getElementById('game-root').appendChild(canvas);
+    } else {
+      canvas.id = 'bevy-canvas';
+    }
+
+    const root = document.getElementById('game-root');
+    // Ensure Bevy canvas is inside #game-root for correct stacking above #page-bg
+    if (canvas && canvas.parentElement !== root) {
+      root.appendChild(canvas);
+    }
+
+    // Resize logic: keep CSS size 100% and set internal pixel buffer to match DPR.
+    const fitCanvas = () => {
+      const rect = root.getBoundingClientRect();
+      const dpr = Math.max(1, window.devicePixelRatio || 1);
+
+      // Set CSS size (what the user sees)
+      canvas.style.width  = `${rect.width}px`;
+      canvas.style.height = `${rect.height}px`;
+
+      // Set internal resolution to match CSS * DPR (what WebGL renders)
+      const pxW = Math.max(1, Math.floor(rect.width  * dpr));
+      const pxH = Math.max(1, Math.floor(rect.height * dpr));
+      if (canvas.width !== pxW || canvas.height !== pxH) {
+        canvas.width  = pxW;
+        canvas.height = pxH;
+      }
+    };
+
+    // Initial fit + observers
+    fitCanvas();
+
+    // ResizeObserver covers iframe resizes too; fallback to window resize
+    const ro = new ResizeObserver(() => fitCanvas());
+    ro.observe(root);
+    window.addEventListener('resize', fitCanvas);
+
+    // Fullscreen toggle (works in iframe if host allows fullscreen)
+    const enterFullscreen = async () => {
+      const el = root; // use the wrapper so overlays can stay visible if you want
+      const anyEl = /** @type {any} */ (el);
+      try {
+        if (document.fullscreenElement) {
+          await document.exitFullscreen();
+        } else if (el.requestFullscreen) {
+          await el.requestFullscreen();
+        } else if (anyEl.webkitRequestFullscreen) {
+          anyEl.webkitRequestFullscreen(); // Safari
+        }
+      } catch (e) {
+        console.warn('Fullscreen request failed:', e);
+      }
+      // After entering/exiting fullscreen, refit:
+      setTimeout(fitCanvas, 0);
+    };
+
+    document.getElementById('fs-btn').addEventListener('click', enterFullscreen);
+
+    // Optional: expose a global for your Bevy WASM to call (e.g., from a system)
+    // globalThis.enterFullscreen = enterFullscreen;
+
+    // Optional: if you pass ?projectVars=... on Newgrounds, you can read them here and
+    // stash them on window for your Rust code to pick up via js_sys:
+    // const params = new URLSearchParams(location.search);
+    // try { window.__PROJECT_VARS__ = JSON.parse(params.get('projectVars') || '{}'); } catch {}
+  </script>
+</body>
+</html>
+
+
+

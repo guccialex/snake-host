@@ -1,0 +1,1805 @@
+(
+  resources: {},
+  entities: {
+    4294967945: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 0.0, -5.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967946: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 0.0, -5.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967947: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 0.0, -5.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967948: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 0.0, -6.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967949: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 0.0, -6.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967950: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.0, 0.0, -11.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::fruit::Fruit": (),
+      },
+    ),
+    4294967951: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 0.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967952: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 0.0, -6.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967953: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 0.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967954: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 1.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::fruit::Fruit": (),
+      },
+    ),
+    4294967955: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 1.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967956: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 0.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967957: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 0.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967958: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 1.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967959: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 2.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967960: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 2.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967961: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 2.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967962: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 2.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967963: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 2.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967964: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 1.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967965: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 0.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967966: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 2.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967967: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 0.0, -7.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967968: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 0.0, -7.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967969: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (2.0, 8.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967970: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (2.0, 8.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967971: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (2.0, 8.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967972: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 8.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967973: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 8.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967974: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.0, 8.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967975: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.0, 8.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967976: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 0.0, -7.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967977: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 8.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967978: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 3.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::fruit::Fruit": (),
+      },
+    ),
+    4294967979: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 3.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967980: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-4.0, 2.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967981: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-3.0, 2.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967982: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 9.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::fruit::Fruit": (),
+      },
+    ),
+    4294967983: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-2.0, 3.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::fruit::Fruit": (),
+      },
+    ),
+    4294967984: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-2.0, 2.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967985: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 3.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967986: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 4.0, -16.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967987: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-1.0, 3.0, -16.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967989: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 5.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967991: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-1.0, 3.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967992: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (2.0, 3.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967993: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 3.0, -16.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294967996: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 3.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968003: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 5.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968005: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 5.0, -16.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968009: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (2.0, 3.0, -16.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968010: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 4.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968011: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.0, 3.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968012: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.0, 3.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968013: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.0, 3.0, -16.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968014: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 6.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968015: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 6.0, -16.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968018: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 6.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968019: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (2.0, 3.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968021: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 4.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968024: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 9.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::fruit::Fruit": (),
+      },
+    ),
+    4294968025: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.0, 8.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968026: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-1.0, 3.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968028: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 8.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968030: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 8.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968031: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 8.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968032: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-1.0, 2.0, -15.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968033: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 9.0, -11.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968034: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 8.0, -11.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968035: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 9.0, -11.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968036: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 9.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968037: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 9.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968038: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 8.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968039: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 8.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968040: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 8.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968041: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 9.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968042: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 9.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968043: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 9.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968044: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 9.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968045: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 8.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968046: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 8.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968047: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 8.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968048: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 8.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968049: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 8.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968050: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 8.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968051: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 8.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968052: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 9.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968053: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 8.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968054: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 8.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968055: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 9.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968056: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 8.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968057: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 9.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968058: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 8.0, -11.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968059: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 8.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968060: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 8.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968061: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 8.0, -11.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968062: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 8.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968063: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 9.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968064: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 8.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968065: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 0.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968070: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 8.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968072: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 9.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968073: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 9.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968074: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 8.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968075: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 9.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968076: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 10.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968077: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 9.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968078: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 8.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968079: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 8.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968080: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 8.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968081: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 9.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968082: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 8.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968083: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 8.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968084: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 8.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968086: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 9.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968088: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 8.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968089: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 9.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968090: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-9.0, 9.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968091: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 10.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968092: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 10.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968093: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 10.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968094: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 11.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968095: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 10.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968096: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (4.0, 16.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968097: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (4.0, 15.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968098: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (4.0, 14.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968099: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 10.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968100: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 11.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968101: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 11.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968102: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 11.0, -13.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968103: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 11.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968104: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (0.0, 11.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968105: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-3.0, 11.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968106: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (3.0, 12.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968107: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-4.0, 11.0, -12.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968108: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-5.0, 11.0, -14.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Scalable": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968109: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (4.0, 13.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968110: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (3.0, 13.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968111: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (3.0, 11.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968112: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (2.0, 11.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968113: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (1.0, 11.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968115: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (2.0, 7.0, -8.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+        "game::single_file_plugins::fruit::Fruit": (),
+      },
+    ),
+    4294968116: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-7.0, 0.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    4294968123: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-8.0, 0.0, -9.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+    128849019528: (
+      components: {
+        "bevy_transform::components::transform::Transform": (
+          translation: (-6.0, 0.0, -10.0),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (1.0, 1.0, 1.0),
+        ),
+        "game::physics::Physical": (),
+        "game::physics::Wall": (),
+        "game::scenes::scene_saving_and_loading::saving::SaveEntity": (),
+      },
+    ),
+  },
+)
