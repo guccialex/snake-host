@@ -1,4 +1,6 @@
 ClimbTubeScene
+CustomScene0
+CustomScene1
 MoseyUpwardsScene
 SnakeWayScene
 StartScene

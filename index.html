@@ -2,183 +2,314 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- Use dynamic viewport units so mobile address bars don’t shrink your canvas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Snake Forever Adventure</title>
 
-  <!-- Trunk: copy assets -->
   <link data-trunk rel="copy-dir" href="assets/" />
-
-  <!-- Optional: your CSS + bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <style>
     :root {
-      /* Default to fill the container; you enforce AR in Bevy via viewport. */
+      color-scheme: dark;
+      --checker-size: 20px;
+      --overlay-bg: rgba(0, 0, 0, 0.5);
+      --overlay-bg-hover: rgba(0, 0, 0, 0.65);
     }
-    html, body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: #000; /* your checker stays under #page-bg */
-      overflow: hidden; /* avoid scrollbars inside iframe */
+
+    * {
+      box-sizing: border-box;
     }
-    /* Your original background pattern, placed behind the canvas */
+
+    html,
+    body { height: 100%; }
+
+    body { margin: 0; background: #000; overflow: hidden; }
+
     #page-bg {
       position: fixed;
       inset: 0;
       background: linear-gradient(
         135deg,
-        white 0%,
-        white 49%,
-        black 49%,
-        black 51%,
-        white 51%,
-        white 100%
+        #fff 0%,
+        #fff 49%,
+        #000 49%,
+        #000 51%,
+        #fff 51%,
+        #fff 100%
       ) repeat;
-      background-size: 20px 20px;
+      background-size: var(--checker-size) var(--checker-size);
       z-index: -1;
       pointer-events: none;
     }
 
-    /* The game root fills the visible page (or the iframe) */
     #game-root {
       position: relative;
       width: 100%;
-      height: 100dvh;  /* use dynamic viewport height on mobile */
-      z-index: 1;
+      height: 100dvh;
+      display: grid;
+      place-items: stretch;
+      isolation: isolate;
     }
 
-    /* Let the canvas fill the root; JS will set its pixel width/height (DPR) */
-    #bevy-canvas, canvas {
+    #bevy-canvas,
+    canvas {
       display: block;
       width: 100%;
       height: 100%;
-      background: white;
-      touch-action: none;        /* prevent swipe-to-scroll/zoom on mobile */
-      -webkit-user-select: none; /* iOS */
-      -ms-user-select: none;
+      background: #fff;
+      touch-action: none;
       user-select: none;
+      -webkit-user-select: none;
     }
 
-    /* Minimal overlay UI for fullscreen toggle */
+    #bevy-canvas:focus,
+    #bevy-canvas:focus-visible {
+      outline: none;
+    }
+
     #overlay {
       position: absolute;
-      right: 12px;
       top: 12px;
+      right: 12px;
       display: flex;
       gap: 8px;
       z-index: 2;
       pointer-events: auto;
     }
+
     .overlay-btn {
       padding: 6px 10px;
       font-size: 14px;
       line-height: 1;
       border-radius: 8px;
-      border: 1px solid rgba(255,255,255,0.25);
-      background: rgba(0,0,0,0.5);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: var(--overlay-bg);
       color: #fff;
       cursor: pointer;
+      transition: background 120ms ease-in-out;
     }
-    .overlay-btn:hover { background: rgba(0,0,0,0.65); }
+
+    .overlay-btn:hover,
+    .overlay-btn:focus-visible {
+      background: var(--overlay-bg-hover);
+    }
+
+    #start-prompt {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-content: center;
+      padding: 24px;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      z-index: 3;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    #start-prompt.hidden {
+      display: none;
+    }
+
+    .start-label {
+      place-self: center;
+      display: inline-block;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.8);
+    }
   </style>
 </head>
 
 <body>
-  <div id="page-bg"></div>
+  <div id="page-bg" aria-hidden="true"></div>
 
-  <div id="game-root">
-    <div id="overlay">
-      <button id="fs-btn" class="overlay-btn" title="Fullscreen (Esc to exit)">Fullscreen</button>
-    </div>
-    <!-- Bevy will create/attach the canvas. If you prefer to predefine it, uncomment:
-    <canvas id="bevy-canvas"></canvas>
-    -->
-  </div>
+  <main id="game-root" role="application">
+    <section id="start-prompt" role="button" tabindex="0">
+      <span class="start-label">play</span>
+    </section>
+
+    <nav id="overlay" aria-label="Game controls">
+      <button
+        id="fullscreen-button"
+        class="overlay-btn"
+        type="button"
+        title="Fullscreen (Esc to exit)"
+      >
+        Fullscreen
+      </button>
+    </nav>
+  </main>
 
   <script type="module">
-    console.log("Loading Bevy game...");
-    import init from './target/bevy_game.js';
-
-    // Boot the WASM. If your generated glue returns a promise, await it.
-    await init();
-
-    // Grab the canvas Bevy/winit created (or the predefined one if you uncommented it).
-    let canvas = document.querySelector('#bevy-canvas') || document.querySelector('canvas');
-    if (!canvas) {
-      console.warn('Bevy canvas not found; creating one manually.');
-      canvas = document.createElement('canvas');
-      canvas.id = 'bevy-canvas';
-      document.getElementById('game-root').appendChild(canvas);
-    } else {
-      canvas.id = 'bevy-canvas';
-    }
-
-    const root = document.getElementById('game-root');
-    // Ensure Bevy canvas is inside #game-root for correct stacking above #page-bg
-    if (canvas && canvas.parentElement !== root) {
-      root.appendChild(canvas);
-    }
-
-    // Resize logic: keep CSS size 100% and set internal pixel buffer to match DPR.
-    const fitCanvas = () => {
-      const rect = root.getBoundingClientRect();
-      const dpr = Math.max(1, window.devicePixelRatio || 1);
-
-      // Set CSS size (what the user sees)
-      canvas.style.width  = `${rect.width}px`;
-      canvas.style.height = `${rect.height}px`;
-
-      // Set internal resolution to match CSS * DPR (what WebGL renders)
-      const pxW = Math.max(1, Math.floor(rect.width  * dpr));
-      const pxH = Math.max(1, Math.floor(rect.height * dpr));
-      if (canvas.width !== pxW || canvas.height !== pxH) {
-        canvas.width  = pxW;
-        canvas.height = pxH;
-      }
+    const elements = {
+      root: document.getElementById('game-root'),
+      startPrompt: document.getElementById('start-prompt'),
+      fullscreenButton: document.getElementById('fullscreen-button'),
     };
 
-    // Initial fit + observers
-    fitCanvas();
+    if (!elements.root) {
+      throw new Error('Missing #game-root element.');
+    }
 
-    // ResizeObserver covers iframe resizes too; fallback to window resize
-    const ro = new ResizeObserver(() => fitCanvas());
-    ro.observe(root);
-    window.addEventListener('resize', fitCanvas);
+    let canvas = null;
+    const state = { hasStarted: false, resizeAttached: false };
 
-    // Fullscreen toggle (works in iframe if host allows fullscreen)
-    const enterFullscreen = async () => {
-      const el = root; // use the wrapper so overlays can stay visible if you want
-      const anyEl = /** @type {any} */ (el);
+    const resizeObserver = typeof ResizeObserver === 'function'
+      ? new ResizeObserver(() => resizeCanvas())
+      : null;
+
+    function resizeCanvas() {
+      if (!canvas) {
+        return;
+      }
+
+      const rect = elements.root.getBoundingClientRect();
+      const dpr = Math.max(1, window.devicePixelRatio || 1);
+
+      canvas.style.width = `${rect.width}px`;
+      canvas.style.height = `${rect.height}px`;
+
+      const internalWidth = Math.max(1, Math.floor(rect.width * dpr));
+      const internalHeight = Math.max(1, Math.floor(rect.height * dpr));
+
+      if (canvas.width !== internalWidth) {
+        canvas.width = internalWidth;
+      }
+
+      if (canvas.height !== internalHeight) {
+        canvas.height = internalHeight;
+      }
+    }
+
+    function beginResizing() {
+      if (state.resizeAttached) {
+        return;
+      }
+
+      resizeObserver?.observe(elements.root);
+      window.addEventListener('resize', resizeCanvas);
+      state.resizeAttached = true;
+    }
+
+    async function toggleFullscreen() {
+      const target = elements.root;
+      const anyTarget = /** @type {any} */ (target);
+
       try {
         if (document.fullscreenElement) {
           await document.exitFullscreen();
-        } else if (el.requestFullscreen) {
-          await el.requestFullscreen();
-        } else if (anyEl.webkitRequestFullscreen) {
-          anyEl.webkitRequestFullscreen(); // Safari
+        } else if (target.requestFullscreen) {
+          await target.requestFullscreen();
+        } else if (anyTarget.webkitRequestFullscreen) {
+          anyTarget.webkitRequestFullscreen();
         }
-      } catch (e) {
-        console.warn('Fullscreen request failed:', e);
+      } catch (error) {
+        console.warn('Fullscreen request failed:', error);
       }
-      // After entering/exiting fullscreen, refit:
-      setTimeout(fitCanvas, 0);
-    };
 
-    document.getElementById('fs-btn').addEventListener('click', enterFullscreen);
+      setTimeout(resizeCanvas, 0);
+    }
 
-    // Optional: expose a global for your Bevy WASM to call (e.g., from a system)
-    // globalThis.enterFullscreen = enterFullscreen;
+    async function unlockAudioContext() {
+      const AnyAudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AnyAudioContext) {
+        return;
+      }
 
-    // Optional: if you pass ?projectVars=... on Newgrounds, you can read them here and
-    // stash them on window for your Rust code to pick up via js_sys:
-    // const params = new URLSearchParams(location.search);
-    // try { window.__PROJECT_VARS__ = JSON.parse(params.get('projectVars') || '{}'); } catch {}
+      try {
+        const context = (window.__bevyUnlockCtx ??= new AnyAudioContext());
+        if (context.state === 'suspended') {
+          await context.resume();
+        }
+      } catch (error) {
+        console.warn('Audio context unlock failed:', error);
+      }
+    }
+
+    async function startGame(init) {
+      if (state.hasStarted) {
+        return;
+      }
+
+      state.hasStarted = true;
+      elements.startPrompt?.classList.add('hidden');
+
+      await unlockAudioContext();
+
+      try {
+        await init();
+      } catch (error) {
+        state.hasStarted = false;
+        elements.startPrompt?.classList.remove('hidden');
+        console.error('Failed to initialize Bevy game:', error);
+        return;
+      }
+
+      canvas = elements.root.querySelector('#bevy-canvas')
+        || document.querySelector('#bevy-canvas')
+        || document.querySelector('canvas')
+        || document.createElement('canvas');
+
+      if (canvas.id !== 'bevy-canvas') {
+        canvas.id = 'bevy-canvas';
+      }
+
+      if (canvas.parentElement !== elements.root) {
+        elements.root.append(canvas);
+      }
+
+      resizeCanvas();
+      beginResizing();
+      canvas?.focus?.();
+    }
+
+    function wireUI(init) {
+      elements.fullscreenButton?.addEventListener('click', toggleFullscreen);
+
+      const startController = new AbortController();
+      const { signal } = startController;
+
+      const attemptStart = (event) => {
+        if (event?.type === 'pointerdown') {
+          event.preventDefault();
+        }
+
+        startGame(init).then(() => {
+          if (state.hasStarted) {
+            startController.abort();
+          }
+        });
+      };
+
+      elements.startPrompt?.addEventListener('pointerdown', attemptStart, { signal });
+      window.addEventListener(
+        'keydown',
+        (event) => {
+          if (event.defaultPrevented || event.key === 'Tab') {
+            return;
+          }
+
+          attemptStart(event);
+        },
+        { signal }
+      );
+    }
+
+    async function bootstrap() {
+      const module = await import('./target/bevy_game.js');
+      const init = module.default ?? module;
+
+      wireUI(init);
+    }
+
+    bootstrap().catch((error) => {
+      console.error('Failed to bootstrap Bevy game:', error);
+    });
   </script>
 </body>
 </html>
-
-
-
